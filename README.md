@@ -18,9 +18,9 @@ La arquitectura Aws consistirá de los siguientes elementos:
 	- Jar con proyecto java que se desplegara como función Lambda.
 	- Copia de la web y datos con las ultimas estadisticas de la web del ministererio del estado del Codvid-10 en España. Como inicio se generarán los ficheros : current_web.txt y  resources/data.csv que contendran la copia de la web. 
 		Adiccionalmente se creará el fichero con el listado de números telefonicos donde enviar las notificaciones.
-2) Importar el proyecto java que se encuentra en xxx y generar el jar de despliegue:
+2) Importar el proyecto java y generar el jar de despliegue:
 	- El proyecto java se encarga de comparar la web del ministerio con una copia que se encuentra en el bucket.
-	- Si en cuentra diferencias, guardará la web en el bucket, y enviará una notificación SMS a la lista de telefonos.
+	- Si encuentra diferencias guardará la web en el bucket, y enviará una notificación SMS a la lista de telefonos.
 3) Tras ello se creará la función Lambda:
 	a) Se elije como Runtime Java 1.8
 	b) Se utilizará el asistente de Lambda para crear el rol que ejecutará función, y para el cual habrá que añadir dos permisos adiccionales de IAM: S3FullAccess y SNSFullAccess.

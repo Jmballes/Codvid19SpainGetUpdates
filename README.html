@@ -1,201 +1,87 @@
-<html>
-<head>
-<style>
-/*************************************
-GENERAL
-*************************************/
-body {
-    margin: 15;
-    padding: 0;
-    font: 12px/1.4em "Lucida Grande", Verdana, sans-serif;
-    color: #333;
-    overflow-y: scroll;
-    text-rendering: optimizeLegibility;
-    background-color: #F2F2F2;
-}
+# Project Title
 
-h2 {
-    font-size: 1.3em;
-    line-height: 1.5em;
-    font-weight: bold;
-    margin: 20px 0 0 0;
-    padding: 0;
-    border-bottom: 3px solid #eee;
+One Paragraph of project description goes here
 
-    /* icon setup */
-    padding: 0.2em 1em 0.2em 30px;
-    background-position: 0 50%;
-    background-repeat: no-repeat;
-}
+## Getting Started
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-/*************************************
-SECTIONS
-*************************************/
-div#content {
-    margin: 30px auto;
-    padding: 0 30px 15px 30px;
-    background-color: #fff;
-    width: 940px;
+### Prerequisites
 
-    /* box-shadow */
-    -moz-box-shadow: 0 5px 10px #aaa;
-    -webkit-box-shadow: 0 5px 10px #aaa;
-    box-shadow: 0 5px 10px #aaa;
+What things you need to install the software and how to install them
 
-    /* bottom corners */
-    -webkit-border-bottom-right-radius: 7px;
-    -webkit-border-bottom-left-radius: 7px;
-    -moz-border-radius-bottomright: 7px;
-    -moz-border-radius-bottomleft: 7px;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-}
+```
+Give examples
+```
 
-/*div#content div.section {}*/
+### Installing
 
-div#content div.section ul {
-    margin: 0;
-    padding: 1em 0 0 2em;
-    overflow: hidden;
-}
+A step by step series of examples that tell you how to get a development env running
 
-div#content div.section ul li {
-    list-style-type: square;
-    white-space: nowrap;
-    line-height: 1.5em;
-}
+Say what the step will be
 
-/* Section titles */
-div#content div.section.s3 h2 {
-    background-image: url(../images/drive.png);
-}
+```
+Give the example
+```
 
-div#content div.section.ec2 h2 {
-    background-image: url(../images/server.png);
-}
+And repeat
 
-div#content div.section.sdb h2 {
-    background-image: url(../images/database.png);
-}
+```
+until finished
+```
 
+End with an example of getting some data out of the system or using it for a little demo
 
-/*************************************
-CONTAINERS
-*************************************/
-.container {
-    zoom: 1;
-}
+## Running the tests
 
-.container:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
+Explain how to run the automated tests for this system
 
+### Break down into end to end tests
 
-/*************************************
-GRIDS
-*************************************/
-.grid { float: left; margin-right: 20px; }
-.gridlast { margin-right: 0; }
-.grid5 { width: 300px; }
-.grid15 { width: 940px; }
+Explain what these tests test and why
 
-</style>
-</head>
-<div style="left: 32px; width: 975px; height: 753px;">
-<div style="padding-left: 37.5px; padding-right: 37.5px;">
+```
+Give an example
+```
 
-<div>
+### And coding style tests
 
-<h1>Welcome to AWS Lambda Eclipse Plugin</h1>
+Explain what these tests test and why
 
-<p><strong>Congratulations</strong>! You have created your first AWS Lambda project. So what's next?</p>
+```
+Give an example
+```
 
-<hr>
+## Deployment
 
-</div>
+Add additional notes about how to deploy this on a live system
 
-<div>
+## Built With
 
-<h3>Step 1: Implement your function</h3>
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-<p>Open up <strong>LambdaFunctionHandler.java</strong> and implement the <strong>handleRequest</strong> method. This method is the entry point for your Lambda function, and it will be invoked by Lambda in response to input from the event sources of your function.</p>
+## Contributing
 
-<blockquote>
-  <p><strong>Note:</strong> You can add new classes and additional external dependencies in your project if needed.</p>
-</blockquote>
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-<hr>
+## Versioning
 
-</div>
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-<div>
+## Authors
 
-<h3>Step 2: Test your function</h3>
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
-<p>Open up <strong>LambdaFunctionHandlerTest.java</strong>. Fill in your test logic to validate the input and output of your function handler, and then run it locally as a normal JUnit test.</p>
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-<blockquote>
-  <p><strong>Note:</strong> The unit test provides a sample JSON input file if you have chosen a predefined event type as your function input. You can modify the JSON file, or create new ones based on it.</p>
-</blockquote>
+## License
 
-<hr>
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-</div>
+## Acknowledgments
 
-<div>
-
-<h3>Step 3: Upload your function</h3>
-
-<p>
-Under Project or Package Explorer View, right-click on your project and select <strong>Amazon Web Services -&gt; Upload Function to AWS Lambda</strong>.
-Then follow the steps to create a new Lambda function or upload your code to an existing function.
-</p>
-</ul>
-
-<hr>
-
-</div>
-
-<div>
-
-<h3>Step 4: Invoke your function</h3>
-
-<p>Now we are ready to run the function in the cloud. Right-click on your project again and select <strong>Amazon Web Services -&gt; Run on AWS Lambda</strong>. <br>
-In the input dialog, enter the JSON input for your function, or select one of the JSON files in your project.</p>
-
-<blockquote>
-  <p><strong>Tip:</strong> You can add new JSON input files in your project, and they will show up in this dialog as long as the file name ends with ".json".</p>
-</blockquote>
-
-<p>Click <strong>Invoke</strong> and check the output of your function in the Eclipse Console View.</p>
-
-<hr>
-
-</div>
-
-<div>
-
-<h3>What's next?</h3>
-
-<p>If you want to know more about AWS Lambda, check out the following links:</p>
-
-<ul>
-<li><a href="http://aws.amazon.com/lambda/details/">AWS Lambda Product Details</a></li>
-<li><a href="http://docs.aws.amazon.com/lambda/latest/dg/welcome.html">AWS Lambda Developer Guide</a></li>
-</ul>
-
-<p><a href="mailto:aws-eclipse-feedback@amazon.com">Contact us</a> to send bug reports and feedbacks.</p>
-
-<p><strong><em>AWS SDK for Java team</em></strong></p>
-
-</div>
-
-</div>
-
-</div>
-</html>
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc

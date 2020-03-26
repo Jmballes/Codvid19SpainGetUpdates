@@ -5,7 +5,7 @@ Sistema para obtener notificaciones SMS ante actualizaciones de la web del minis
 
 La arquitectura Aws consistirá de los siguientes elementos:
 
-1) Bucket privado: donde se guardará el ultimo estado de la web del ministerio.
+1) Bucket privado: donde se guardará el ultimo estado de la web del ministerio, y el jar con el proyecto compilado para poder cargarse en Lambda
 ![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/bucket.PNG?raw=true)
 2) CloudWatch -Eventbride: scheduler que se ejecutará cada 5 minutos.
 ![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/trigger1.png?raw=true)

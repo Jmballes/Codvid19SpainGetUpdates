@@ -2,15 +2,20 @@
 
 Sistema para obtener notificaciones SMS ante actualizaciones de la web del ministerio que mantiene las estadisticas del estado del CodVid-19 en España
 
+Notificación SMS:
+![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/sms.jpg?raw=true)
 
 La arquitectura Aws consistirá de los siguientes elementos:
 
-1) Bucket privado: donde se guardará el ultimo estado de la web del ministerio, y el jar con el proyecto compilado para poder cargarse en Lambda
+1) Bucket privado: donde se guardará el ultimo estado de la web del ministerio, y el jar con el proyecto compilado para poder cargarse en Lambda.
 ![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/bucket.PNG?raw=true)
+
 2) CloudWatch -Eventbride: scheduler que se ejecutará cada 5 minutos.
 ![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/trigger1.png?raw=true)
+
 3) Lambda: función desarrollada en Java 1.8 encargada de comprobar si hay novedades en la web del ministerio, e invocar el servicio AWS-SNS.
 ![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/lamba.PNG?raw=true)
+
 4) SNS: Sistema encargado de enviar las notificaciones mediante SMS.
 
 ### Pasos a seguir:

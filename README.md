@@ -3,7 +3,7 @@
 Sistema para obtener notificaciones SMS ante actualizaciones de la web del ministerio que mantiene las estadisticas del estado del CodVid-19 en España
 
 Notificación SMS:
-![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/sms.jpg?raw=true)
+![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/smstiny.png?raw=true)
 
 La arquitectura Aws consistirá de los siguientes elementos:
 

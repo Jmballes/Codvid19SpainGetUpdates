@@ -5,15 +5,18 @@ Sistema para obtener notificaciones SMS ante actualizaciones de la web del minis
 
 La arquitectura Aws consistirá de los siguientes elementos:
 
-1) Bucket privado: donde se guardará el ultimo estado de la web del ministerio.
+1) Bucket privado: donde se guardará el ultimo estado de la web del ministerio, y el jar con el proyecto compilado para poder cargarse en Lambda
+![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/bucket.PNG?raw=true)
 2) CloudWatch -Eventbride: scheduler que se ejecutará cada 5 minutos.
+![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/trigger1.png?raw=true)
 3) Lambda: función desarrollada en Java 1.8 encargada de comprobar si hay novedades en la web del ministerio, e invocar el servicio AWS-SNS.
+![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/lamba.PNG?raw=true)
 4) SNS: Sistema encargado de enviar las notificaciones mediante SMS.
 
 ### Pasos a seguir:
 
 
-```
+
 1) Creacción de un bucket privado donde se almacenará:
 	- Jar con proyecto java que se desplegara como función Lambda.
 	- Copia de la web y datos con las ultimas estadisticas de la web del ministererio del estado del Codvid-10 en España. Como inicio se generarán los ficheros : current_web.txt y  resources/data.csv que contendran la copia de la web. 
@@ -32,4 +35,3 @@ La arquitectura Aws consistirá de los siguientes elementos:
 	b) Se selecciona CloudWatch Events/EventBridge
 	c) En schedule expression se indica: rate(5 minutes)
 
-```

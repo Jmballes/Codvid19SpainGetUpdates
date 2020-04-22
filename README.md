@@ -1,6 +1,8 @@
 # Covid19UpdateSpain
 
-Sistema para obtener notificaciones SMS ante actualizaciones de la web del ministerio que mantiene las estadisticas del estado del CodVid-19 en España
+Como crear en AWS un sistema para enviar notificaciones SMS ante actualizaciones de la web del ministerio que mantiene las estadisticas del estado del CodVid-19 en España
+
+Arquitectura AWS: ![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/aws.PNG?raw=true)
 
 Notificación SMS:
 ![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/smstiny.png?raw=true)

@@ -2,13 +2,13 @@
 
 Como crear en AWS un sistema para enviar notificaciones mediante SMS y Email ante actualizaciones de la web del ministerio que mantiene las estadisticas del estado del CodVid-19 en España
 
-Arquitectura AWS: ![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/aws.PNG?raw=true)
+Arquitectura AWS: ![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/aws2.png)
 
 Notificación SMS:
 ![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/smstiny.png?raw=true)
 
 Notificación Email:
-![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/aws2.png)
+![Image](https://github.com/Jmballes/Codvid19SpainGetUpdates/blob/master/img/email.png?raw=true)
 La arquitectura Aws consistirá de los siguientes elementos:
 
 1) Bucket privado: donde se guardará el ultimo estado de la web del ministerio, y el jar con el proyecto compilado para poder cargarse en Lambda.

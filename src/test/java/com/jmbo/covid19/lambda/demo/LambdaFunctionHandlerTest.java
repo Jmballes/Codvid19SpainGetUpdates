@@ -58,6 +58,7 @@ public class LambdaFunctionHandlerTest {
 
     @Test
     public void testLambdaFunctionHandler() {
+
         Codvid19SpainGetUpdates handler = new Codvid19SpainGetUpdates(s3Client);
         Context ctx = createContext();
         Map<String, Object> input=new HashMap<String,Object>();
